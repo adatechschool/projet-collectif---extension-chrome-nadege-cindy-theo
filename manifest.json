@@ -1,0 +1,26 @@
+{
+    "name": "WorkDesk",
+    "version": "1.0.0",
+    "description": "",
+    "manifest_version": 3,
+    "author": "",
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "service_worker": "./content/clockTimer.js"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Ada Extension"
+    },
+    "content_scripts": [
+      {
+        "js": [
+            "./content/clockTimer.js"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
