@@ -7,11 +7,8 @@
     "permissions": [
         "storage"
     ],
-    "background": {
-        "service_worker": "./content/clockTimer.js"
-    },
     "action": {
-      "default_popup": "index.html",
+      "default_popup": "./index.html",
       "default_title": "Ada Extension"
     },
     "content_scripts": [
@@ -19,6 +16,13 @@
         "js": [
             "./content/clockTimer.js"
         ],
+        "html": [
+            "./index.html"
+        ],
+        "css": [
+            "./style.css"
+        ],
+        "run_at": "document_start",
         "matches": ["<all_urls>"]
       }
     ]
