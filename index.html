@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Insert css file -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./content/social-media-blocker.css" />
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
@@ -15,80 +16,37 @@
     <title>WorkDesk</title>
   </head>
   <body>
-    <!-- ClockTimer PART ! -->
-    <!-- Timer -->
-    <h2 id="timer" class="text-center mt-3">00:00:00</h2>
+    <!-- !!!!! -->
+    <!-- Time clock PART -->
+    <!-- !!!!! -->
 
-    <!-- Div for choice timer, 15min, 30min, 1hours, 4hours -->
-    <div class="container mt-3" style="width: 250px">
-      <h3 class="text-center">Select time</h3>
-      <table class="contaier mt-1 table table-bordered text-center">
-        <!-- Button start countdown for 15 min -->
-        <tr>
-          <td>
-            <button class="btn btn-success" id="start15">15 min</button>
-          </td>
-        </tr>
-        <!-- Button start countdown for 30 min -->
-        <tr>
-          <td>
-            <button class="btn btn-success" id="start30">30 min</button>
-          </td>
-        </tr>
-        <!-- Button start countdown for 1 hours -->
-        <tr>
-          <td>
-            <button class="btn btn-success" id="start1h">1 hours</button>
-          </td>
-        </tr>
-        <!-- Button start countdown for 4 hours -->
-        <tr>
-          <td>
-            <button class="btn btn-success" id="start4h">4 hours</button>
-          </td>
-        </tr>
-        <!-- Range button for countdown -->
-        <tr>
-          <td>
-            <input type="range" id="range" min="0" max="240" value="30" />
-          </td>
-        </tr>
-      </table>
-    </div>
+    <!-- HTML pour afficher le timer -->
+    <div id="timer">00:00</div>
+    <!-- Formulaire pour sélectionner la durée du timer -->
+    <select id="duration">
+      <option value="900">15 minutes</option>
+      <option value="1800">30 minutes</option>
+      <option value="3600">1 heure</option>
+      <option value="14400">4 heures</option>
+    </select>
+    <!-- Boutons pour démarrer, mettre en pause/reprendre et réinitialiser le timer -->
+    <button id="start">Start</button>
+    <button id="pause-resume">Pause</button>
+    <button id="reset">Reset</button>
+    <br />
 
-    <!-- Div for all button, pause, reset -->
-    <div class="container mt-3" style="width: 250px">
-      <h3 class="text-center">BUTTON</h3>
-      <table class="contaier mt-1 table table-bordered text-center">
-        <!-- Button start countdown for 15 min -->
-        <tr>
-          <td>
-            <button class="btn btn-success" id="start">START</button>
-            <p hidden id="status">true</p>
-          </td>
-        </tr>
-        <!-- Button pause / unpause -->
-        <!-- <tr>
-                <td>
-                    <button class="btn btn-primary" id="pause">Pause</button>
-                </td>
-            </tr> -->
-        <!-- Button reset timer -->
-        <tr>
-          <td>
-            <button class="btn btn-warning" id="reset">RESET</button>
-          </td>
-        </tr>
-      </table>
-    </div>
+    <!-- !!!!! -->
+    <!-- Media block PART -->
+    <!-- !!!!! -->
+
     <!-- Toggle button for the social media blocker -->
     <label class="switch">
-      <input type="checkbox">
+      <input type="checkbox" />
       <span class="slider round"></span>
     </label>
+
     <!-- Insert src JS -->
-    <script src="./content/clockTimer.js"></script>
-    <script src="./content/choiceTimer.js"></script>
+    <script src="./background.js"></script>
     <script src="./content/social-media-blocker.js"></script>
   </body>
 </html>
