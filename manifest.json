@@ -16,10 +16,19 @@
     {
       "js": [
         "./background.js",
-        "./content/social-media-blocker.js"
+        "./content/social-media-blocker.js",
+        "./content/post-it.js",
+        "./content/popup.js"
       ],
-      "html": ["./index.html"],
-      "css": ["./style.css"],
+      "html": [
+        "./index.html",
+        "./createPostIt.html",
+        "./popup.html"
+      ],
+      "css": [
+        "./style.css",
+        "./content/post-it.css"
+      ],
       "matches": ["<all_urls>"]
     }
   ]
