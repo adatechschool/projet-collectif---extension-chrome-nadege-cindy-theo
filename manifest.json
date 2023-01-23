@@ -4,7 +4,7 @@
   "description": "",
   "manifest_version": 3,
   "author": "",
-  "permissions": ["activeTab","storage","alarms"],
+  "permissions": ["activeTab","storage","alarms","scripting"],
   "background": {
     "service_worker": "./background.js"
   },
