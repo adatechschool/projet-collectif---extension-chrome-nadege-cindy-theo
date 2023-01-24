@@ -1,9 +1,100 @@
-body {
-    background-color: rgba(71, 127, 134, 0.68);
+/* TITLE MASTER */
+
+body{
+    background-color: #84A98C;
 }
 
-/* .container {
-    background-color: rgba(255, 255, 255, 0.68);
-    border-radius: 10px;
-    padding: 10px;
-} */
+.logo {
+    width: 100px;
+    height: 20x;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    width: 200%;
+    height: 200px;
+    background-color: #84a98c;
+  }
+  
+h1 {
+    color: #040404;
+    font-family: "Fredoka", normal;
+    font-weight: 40;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+}
+  
+/* TIMER PART */
+  
+  .timer-title {
+    width: 100%;
+    height: 40px;
+    background-color: #395f55;
+    /* ombre */
+    box-shadow: 0 2px 0 0 #000;
+  }
+  
+  h2 {
+    color: #040404;
+    font-family: "Fredoka", normal;
+    font-weight: 40;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+  .timer {
+    width: 100%;
+    height: 100px;
+    background-color: #52796f;
+  }
+  
+  #timer {
+    color: #040404;
+    font-family: "Fredoka", normal;
+    font-weight: 20;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  #duration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      margin-bottom: 0.25rem;
+      margin-left: 0.1rem;
+  }
+
+  #start {
+    margin-left: 0.1rem;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fredoka", normal;
+    background-color: #1F7761;
+  }
+
+  #pause-resume {
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fredoka", normal;
+    background-color: #1F7761;
+  }
+
+  #reset {
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fredoka", normal;
+    background-color: #1F7761;
+  }
+/* SOCIAL MEDIA BLOCKER */
+
+.switch {
+    margin-top: 10px;
+}

@@ -80,23 +80,6 @@ chrome.runtime.onSuspend.addListener(() => {
   clearInterval(intervalId);
 });
 
-// 
-// POST-IT PART
-// 
-
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
-  console.log("hello !");
-  if(changeInfo.status == 'complete'){
-    chrome.scripting.executeScript({
-      files: ['post-it.js'],
-      target: {tabId: tab.id}
-    })
-    //on rajoute un clear du storage au lancement de l'extension
-    chrome.storage.local.clear(function() {
-      var error = chrome.runtime.lastError;
-      if (error) {
-          console.error(error);
-      }
-  });
-  }
+// SOCIAl MEDIA BLOCKER
+chrome.storage.local.set({ switch: true }).then(() => {
 });

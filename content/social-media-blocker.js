@@ -12,10 +12,22 @@ function blockPage() {
   }
 }
 
-/* condition d'activation du script : si toggle on dans l'extension
+let on = document.getElementById("switch");
+console.log(on);
+on.addEventListener("click", onActivate);
 
-if document.HTML.toggleOn = true {
-    sitesBanned.forEach(blockPage);
+function onActivate() {
+    console.log(on.checked); 
+    if (on.checked==true){
+        sitesBanned.forEach(blockPage);
+    }
 }
-ou eventlistener ? -> + propre
-*/
+
+function blockPage(){
+    for (i=0; i<=sitesBanned.length; i++) {
+        if (document.URL.includes(sitesBanned[i])){
+            var e = document.body;
+            e.parentNode.removeChild(e);
+        }
+    }
+}

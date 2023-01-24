@@ -9,6 +9,9 @@
     "service_worker": "./background.js"
   },
   "action": {
+    "default_icon": {
+      "64": "./images/logo-workdesk.png"
+    },
     "default_popup": "./index.html",
     "default_title": "Ada Extension"
   },
