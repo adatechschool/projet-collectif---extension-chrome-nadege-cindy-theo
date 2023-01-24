@@ -56,14 +56,28 @@
    <!-- Toggle button for the social media blocker -->
     <div class="container social-media-blocker"> 
       <label class="switch">
-        <input type="checkbox" />
+        <input type="checkbox"/>
         <span class="slider round"></span>
       </label>
+    </div>
+
+   <!--To-Do List-->
+    <div class="containerToDo">
+      <!--Titre et création des nouvelles tâches-->
+      <div class="toDoList">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Tâche...">
+        <span id="addBtn">Ajouter</span>
+      </div>
+      <!--Tâches ajoutés-->
+      <br><br><br>
+      <ul id="myList"></ul>
     </div>
 
     <!-- Insert src JS -->
     <script src="./background.js"></script>
     <script src="./content/timer.js"></script>
     <script src="./content/social-media-blocker.js"></script>  
+    <script src="./toDo.js"></script>
   </body>
 </html>

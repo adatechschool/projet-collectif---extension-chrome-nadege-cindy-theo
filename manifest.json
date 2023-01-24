@@ -20,18 +20,15 @@
       "js": [
         "./background.js",
         "./content/social-media-blocker.js",
-        "./content/post-it.js",
-        "./content/popup.js"
+        "./toDo.js"
       ],
       "html": [
         "./index.html",
-        "./createPostIt.html",
         "./popup.html"
       ],
       "css": [
-        "./style.css",
-        "./content/post-it.css"
-      ],
+        "./style.css"
+    ],
       "matches": ["<all_urls>"]
     }
   ]
