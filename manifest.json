@@ -14,9 +14,14 @@
   },
   "action": {
     "default_icon": {
-      "64": "./images/logo-workdesk.png"
+      "128": "./images/logo-workdesk.png"
     },
     "default_popup": "./index.html",
     "default_title": "Ada Extension"
+  },
+  "icons": {
+    "16": "./images/logo-workdesk.png",
+    "32": "./images/logo-workdesk.png",
+    "48": "./images/logo-workdesk.png"
   }
 }
