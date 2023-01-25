@@ -19,12 +19,10 @@
     {
       "js": [
         "./content/timer.js",
-        "./content/social-media-blocker.js",
-        "./toDo.js"
+        "./content/toDo.js"
       ],
       "html": [
-        "./index.html",
-        "./popup.html"
+        "./index.html"
       ],
       "css": [
         "./style.css"

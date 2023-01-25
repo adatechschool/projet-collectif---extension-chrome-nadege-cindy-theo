@@ -23,12 +23,3 @@ window.onload = () => {
     document.getElementById("timer").innerHTML = `${minutes}:${seconds}`;
   }
 };
-
-//Social media blocker
-
-window.onload = () => {
-  let savedToggle = localStorage.getItem("toggle");
-  if (savedToggle) {
-    toggle.checked = savedToggle === "true";
-  }
-};
