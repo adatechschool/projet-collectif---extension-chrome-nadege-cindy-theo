@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "js": [
-        "./background.js",
+        "./content/timer.js",
         "./content/social-media-blocker.js",
         "./toDo.js"
       ],
