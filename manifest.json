@@ -18,17 +18,5 @@
     },
     "default_popup": "./index.html",
     "default_title": "Ada Extension"
-  },
-  "content_scripts": [
-    {
-      "js": [
-        "./content/timer.js",
-        "./content/toDo.js"
-      ],
-      "html": [
-        "./index.html"
-      ],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }
