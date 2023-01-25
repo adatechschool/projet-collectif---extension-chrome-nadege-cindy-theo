@@ -1,9 +1,13 @@
 {
   "name": "WorkDesk",
   "version": "1.0.0",
-  "description": "",
+  "description": "Timer and To Do List for students.",
   "manifest_version": 3,
-  "author": "",
+  "author" : {
+    "author 1": "Nadège Hellemans",
+    "author 2": "Cindy Bestaven",
+    "author 3": "Théo Seuge"
+},
   "permissions": ["activeTab","storage","alarms","scripting"],
   "background": {
     "service_worker": "./background.js"
