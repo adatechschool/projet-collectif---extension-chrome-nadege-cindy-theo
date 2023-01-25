@@ -111,7 +111,6 @@ h2 {
 /* TO DO LIST */
 
 .containerToDo {
-display: inline-flex;
 padding-top: 20px;
 justify-content: center;
 text-align: center;
@@ -123,10 +122,6 @@ height: auto;
 ul {
 margin: 0;
 padding: 0;
-}
-
-#myList {
-position: sticky;
 }
 
 ul li {
